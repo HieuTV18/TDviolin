@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-s.0">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+    <script src="./asset/javascript.js" defer></script>
+    
+    <title>ThuyDuongViolin.vn</title>
+</head>
+<body>
+    <div class="app">
+        <div class="app_header">
+            <div class="header_logo">
+                <a href=""><img src="./asset/image/logoviolin.jpg" alt="Logo"></a>
+            </div>
+            <div class="header_heading">
+                <i> ThuyDuong </i> Violin
+                <p class="header_saying">
+                    You can do it!
+                </p>
+            </div>
+            
+
+        </div>
+        <div class="app_navbar">
+            <ul class="navbar_menu">
+                <li id="introduce" class="menu_item-link--active menu_item">
+                    <a href="#" class=" menu_item-link ">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li id="teaching_schedule" class="menu_item">
+                    <a href="#"  class="menu_item-link">
+                        Lịch diễn
+                    </a>
+                </li>
+                <li id="show_schedule" class=" menu_item">
+                    <a href="#" class="menu_item-link">
+                        Lịch dạy
+                    </a>
+                </li>
+                <li id="product" class=" menu_item">
+                    <a href="#" class="menu_item-link">
+                        Sản phẩm
+                    </a>
+                </li>
+                <li id="help" class=" menu_item">
+                    <a href="#" class="menu_item-link">
+                        Hỗ trợ
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="slideshow" class="slideshow">
+            <img id="img" onclick="changeImage()" src="./asset/image/slideshow/IMG_0249.JPG" alt="" class="slideshow_img">
+            <!-- <div class="slideshow_control">
+                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img1" checked>
+                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img2">
+                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img3">
+
+            </div> -->
+            <div class="slide_content">
+                <div class="slide_content-time">
+
+                    <!-- <i class="fas fa-ar-alt"></i> -->
+                    <class class="fas fa-birthday-cake"></class>
+                    <span>12 Jan 1995</span>
+                </div>
+                <div class="slide_content-heading">
+                    Làm điều mình thích sớm nhất có thể!
+                </div>
+                <marquee class="marquee-one" behavior="alternate" scrolldelay="200">
+                    Giữa những trầm bổng của cuộc sống, tôi chọn cho mình vài nốt lặng với đam mê.
+
+                </marquee>
+                <marquee id="marquee-two" class="marquee-two" behavior="scroll" direction="left" scrolldelay="100">
+                    <div onmouseover= "document.getElementById('marquee-two').stop();"
+                    onmouseout="document.getElementById('marquee-two').start();">
+                        Phải đủ dũng cảm và nghị lực đối diện với những nốt trầm nhất trong bản nhạc <br>
+                        khi đó, ta mới có những phút giây thăng hoa cho những nốt bổng tiếp theo. 
+                    </div>
+
+                </marquee>
+            </div>
+        </div>
+        <div id="tour_event" class="tour_event">
+            <div class="tour_event-section">
+                <img class="tour_event-img" src="./asset/image/tour/IMG_4421.JPG" alt="">
+                <div class="event-section_description">
+                    <div class="event-section_des--place">Intercontinental Resort</div>
+                    <div class="event-section_des--time">Friday 8 June 2021</div>
+                    <div class="event-section_des--info">
+                        Rất mong được gặp bạn. <br>
+                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                    <button class="event-section_btn btn">Đặt vé</button>
+                </div>
+            </div>
+            <div class="tour_event-section">
+                <img class="tour_event-img" src="./asset/image/tour/42c653e422b217f87e604b49b9eb6424.jpg" alt="">
+                <div class="event-section_description">
+                    <div class="event-section_des--place">For You Restaurant</div>
+                    <div class="event-section_des--time">Saturday 12 June 2021</div>
+                    <div class="event-section_des--info">
+                        Rất mong được gặp bạn. <br>
+                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                    <button class="event-section_btn btn">Đặt vé</button>
+                </div>
+            </div>
+            <div class="tour_event-section">
+                <img class="tour_event-img" src="./asset/image/tour/IMG_3155.JPG" alt="">
+                <div class="event-section_description">
+                    <div class="event-section_des--place">BaNa Hills</div>
+                    <div class="event-section_des--time">Sunday 19 June 2021</div>
+                    <div class="event-section_des--info">
+                        Rất mong được gặp bạn. <br>
+                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                    <button class="event-section_btn btn">Đặt vé</button>
+                </div>
+            </div>
+        </div>
+        <div id="teaching-time" class="teaching-time">
+            <div class="teaching-time_heading">Lịch dạy Violin :</div>
+            <table class="teaching-time_table">
+                <tr>
+                    <th class="table-time_day"  colspan="2" rowspan="2">Ngày</th>
+                    <th class="table-time" colspan="6">Thời gian
+                        <tr>
+                            <th  class="table_day-session"  colspan="2">Buổi sáng
+                                
+                            </th>
+                            <th class="table_day-session"  colspan="2">Buổi chiều
+                                
+                            </th>
+                            <th class="table_day-session"  colspan="2">Buổi tối
+                                
+                            </th>
+                            
+                        </tr>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="table_day" colspan="2">Thứ 2</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day" colspan="2">Thứ 3</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day"  colspan="2">Thứ 4</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day"  colspan="2">Thứ 5</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day"  colspan="2">Thứ 6</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day"  colspan="2">Thứ 7</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table_day"  colspan="2">Chủ Nhật</td>
+                    <td>08h00 - 09h00</td>
+                    <td>09h15 - 10h15</td>
+                    <td>14h00 - 15h00</td>
+                    <td>15h15 - 16h15</td>
+                    <td>18h00 - 19h00</td>
+                    <td>19h15 - 20h15</td>
+                    
+                </tr>                
+            </table>
+            <div class="teacher_list-info">
+
+
+                <p>Thông tin giảng viên:</p>
+    
+                <div class="list_teacher">
+                    <div class="teacher_item">
+    
+                        <div class="teacher_img">
+                            <img src="./asset/image/teacher/145347614_4983844608354338_8312152495185519322_n.jpg" alt="">
+                        </div>
+                        <div class="teacher-description">
+                            <div class="teacher-name">- Hoàng An</div>
+                            <div class="time-case">- Suất dạy: Buổi sáng.</div>
+                            <div class="time-experience">- 4 năm kinh nghiệm.</div>
+                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
+                        </div>
+                    </div>
+                    <div class="teacher_item">
+    
+                        <div class="teacher_img">
+                            <img src="./asset/image/teacher/168496440_4089499561148584_6670861843463644778_n.jpg" alt="">
+                        </div>
+                        <div class="teacher-description">
+                            <div class="teacher-name">Thùy Dương</div>
+                            <div class="time-case">- Suất dạy: Buổi chiều.</div>
+                            <div class="time-experience">- 3 năm kinh nghiệm.</div>
+                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
+                        </div>
+                    </div>
+                    <div class="teacher_item">
+    
+                        <div class="teacher_img">
+                            <img src="./asset/image/teacher/152397419_1842953749185152_7305449962791919598_n.jpg" alt="">
+                        </div>
+                        <div class="teacher-description">
+                            <div class="teacher-name">Hải Lý</div>
+                            <div class="time-case">- Suất dạy: Buổi tối.</div>
+                            <div class="time-experience">- 4 năm kinh nghiệm.</div>
+                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="list_product" class="list_product">
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/Dan-Violin-Van-Ve.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">ĐÀN VIOLIN OMEBO RV-205</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.600.000 đ</div>
+                        <div class="description-price_new">1.500.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: RV-205 <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/VIOLIN 7.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">ĐÀN VIOLIN OMEBO</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.800.000 đ</div>
+                        <div class="description-price_new">1.700.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: OMEBO <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product//VQT_9436-600x600.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">KAPOK VIOLIN V182</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.700.000 đ</div>
+                        <div class="description-price_new">1.580.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: V182 <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 1/8, 1/10, 1/4, 2/4, 3/4, 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/VQT_9316a1.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">ĐÀN VIOLIN VÂN THẬT</div>
+                    Liên hệ với chúng tôi để mua hàng giá tốt!
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">3.500.000 đ</div>
+                        <div class="description-price_new">3.380.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: Classic MD <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/VQT_96061-600x600.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">CARLO GIORDAN VIOLIN</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">2.000.000 đ</div>
+                        <div class="description-price_new">1.800.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: Carlo giordan <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 1/4, 2/4, 3/4 , 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/Dan-Violin-Van-Ve.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">ĐÀN VIOLIN OMEBO RV-205</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.500.000 đ</div>
+                        <div class="description-price_new">1.400.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: RV-205 <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product/VIOLIN 7.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">ĐÀN VIOLIN OMEBO</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.800.000 đ</div>
+                        <div class="description-price_new">1.700.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: OMEBO <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+            <div class="list_product-item">
+                <div class="product-item_img">
+                    <img src="./asset/image/product//VQT_9436-600x600.jpg" alt="">
+                </div>
+                <div class="product-item_description">
+                    <div class="product-item_description--name">KAPOK VIOLIN V182</div>
+                    <div class="product-item_description--trademark">Thương hiệu : <span> Yamaha</span></div>
+                    <div class="product-item_description--status">Tình trạng : Còn hàng</div>
+                    <div class="description-price">
+                        <div class="description-price_old">1.700.000 đ</div>
+                        <div class="description-price_new">1.580.000 đ</div>
+                    </div>
+                    <div class="product-item_description--detail">
+                        <p>
+                            Mã sản phẩm: V182 <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Kích cỡ: 1/8, 1/10, 1/4, 2/4, 3/4, 4/4 <br>
+                            Omebo Violin RV-205 <br>
+                            Đàn Violin vân thật <br>
+                            Liên hệ với chúng tôi để mua hàng giá tốt!
+
+                        </p>
+                    </div>
+                    <button class="btn buy-product_btn">Liên hệ</button>
+                </div>
+            </div>
+        </div>
+        <div id="support_help" class="support_help">
+            <div class="support_map">
+                <img src="./asset/image/map.JPG" alt="" class="support_map-img">
+            </div>
+            <div class="support_form">
+            <form>
+                <div class="support_form-user--info">
+
+                    <div class="support_form-name">
+    
+                        Họ và Tên: <br>
+                        <input class="form_name" type="text" name="user_name" placeholder="Điền tên của bạn"><br>
+                    </div>
+                    <div class="support_form-email">
+                        Email: <br>
+                        <input class="form_email" type="email" name="user_email" placeholder="Điền địa chỉ email của bạn" ><br>
+                    </div>
+                    <div class="support_form-sumit">
+                        <input type="submit" value="Gửi tin nhắn">
+                    </div>
+                </div>
+                <div class="support_form-message">
+
+
+                    <div class="support_form-title">
+    
+                        Tiêu đề: <br>
+                    <textarea class="form_title" name="" id="" cols="60" rows="2"placeholder="Điền chủ đề chính cho tin nhắn của bạn"></textarea>
+                    </div>
+                    <div class="support_form-content">
+    
+                        Nội dung: <br>
+                        <textarea class="form_content" name="" id="" cols="60" rows="5"placeholder="Nội dung tin nhắn"></textarea>
+                    </div>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+
+
+        <div class="app_footer">
+            <div class="footer_contact">
+                Liên hệ
+            </div>
+            <ul class="contact_menu">
+                <li class="contact_item">
+                    <i class="contact_icon fas fa-map-marker-alt"></i>
+                    <span class="contact_text">Address </span> <span class="space_symbol">:</span>
+                    K95/10 Bà Huyện Thanh Quan, Mỹ An, Sơn Trà, Đà Nẵng.
+                </li>
+                <li class="contact_item">
+                    <i class="contact_icon fas fa-envelope-square"></i>
+                    <span class="contact_text">Email </span> <span class="space_symbol">:</span>
+                    Thuyduong@gmail.com
+                </li>
+                <li class="contact_item">
+                    <i class="contact_icon fas fa-phone-square-alt"></i>
+                    <span class="contact_text">Phone </span> <span class="space_symbol">:</span>
+                    084.253.7379
+                </li>
+                <li class="contact_item">
+                    <i class="contact_icon fas fa-share-alt"></i>
+                    <span class="contact_text">Social </span> <span class="space_symbol">:</span>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                    
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
