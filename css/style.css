@@ -55,9 +55,12 @@
     border-radius: 8px;
     
 }
-.menu_item:hover{
-    background-color: var(--primary-color);
-    transition: 0.4s;
+.menu_item-link:hover{
+    /* background-color: var(--primary-color); */
+    /* font-size: 1.6rem; */
+    color: black;
+    font-style: italic;
+    transition: 1s;
 }
 .menu_item-link{
     padding: 2rem 1rem;
