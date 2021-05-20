@@ -9,14 +9,18 @@
 .app_header{
     display: flex;
     margin-top: 2rem;
-    justify-content: center;
+    padding-left: 5%;
     align-items: center;
 }
+.header_logo{
+    margin-right: 30%;
+
+}
 .header_logo img{
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     margin-right: 2rem;
-    border: 1px solid #eee;
+    border: 3px solid rgb(76, 240, 252);
     border-radius: 50%;
 
 }
@@ -26,12 +30,34 @@
     
 }
 .header_heading i{
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 600;
+    text-shadow: 
+		1px 0px 1px #bbb, 0px 1px 1px #ddd, 
+		2px 1px 1px #bbb, 1px 2px 1px #ddd,
+		3px 2px 1px #bbb, 2px 3px 1px #ddd,
+		4px 3px 1px #bbb, 3px 4px 1px #ddd,
+		5px 4px 1px #bbb, 4px 5px 1px #ddd,
+		6px 5px 1px #bbb, 5px 6px 1px #ddd,
+		7px 6px 1px #bbb;
 }
+.header_heading span{
+    text-shadow: 
+		1px 0px 1px #bbb, 0px 1px 1px #ddd, 
+		2px 1px 1px #bbb, 1px 2px 1px #ddd,
+		3px 2px 1px #bbb, 2px 3px 1px #ddd,
+		4px 3px 1px #bbb, 3px 4px 1px #ddd,
+		5px 4px 1px #bbb, 4px 5px 1px #ddd,
+		6px 5px 1px #bbb, 5px 6px 1px #ddd,
+		7px 6px 1px #bbb;
+}
+
+
 .header_saying{
     font-size: 1.5rem;
-    padding-left: 3rem;
+    width: 400px;
+    margin-left: -25%;
+    margin-top: 2rem;
     font-style: italic;
     font-weight: 300;
 }
@@ -78,94 +104,157 @@
 .slideshow{
     position: relative;
     width: 100%;
+    height: 600px;
     display: block;
 }
-.slideshow img{
+/* .slideshow img{
     width: 96%;
     height: 50%;
     margin: 0 3rem;
     opacity: 0.4;
     
+} */
+.slide_wrap{
+    position: absolute;
+    background-image: url(../image/slideshow/IMG_0249.JPG);
+    background-position-y: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 40s infinite, FadeIn 0.8s linear;
+
+}
+@keyframes slide{
+    25%{
+        background-image: url(../image/slideshow/IMG_0249.JPG);
+    }
+    50%{
+        background-image: url(../image/slideshow/IMG_0251.JPG);
+    }
+    75%{
+        background-image: url(../image/slideshow/IMG_0877.JPG);
+    }
+    100%{
+        background-image: url(../image/slideshow/IMG_2189.JPG);
+    }
+
 }
 .slide_content{
     position: absolute;
-    top: 8%;
-    left: 45%;
-    color: #eee;
+    width: 100%;
+    top: 30%;
+    right: -50%;
+    color: rgb(45, 163, 218);
     justify-content: center;
-    /* text-shadow:0.1em 0.1em 0.2em black; */
+    text-align: center;
+    transform: translate(-50%,-50%);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation: silde-content 10s infinite, FadeIn 10s infinite;
 }
-.slide_content-heading{
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-left: -26%;
-    letter-spacing: 3px;
+@keyframes silde-content{
+    0%{
+        transform: translate(-50%,50%);
+    }
+    100%{
+        transform: translate(-50%,-80%);
+    }
 }
-.slide_content-time{
+.slide_content-title{
     color: var(--primary-color);
     opacity: 0.7;
-    font-size: 2rem;
+    font-size: 5rem;
+    line-height: 6rem;
 }
-.slide_content-time span{
-    font-weight: 600;
-}
-.marquee-one{
-    width: 120%;
-    height: 3rem;
-    margin-left: -52%;
-    margin-top: 3rem;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: rgba(192, 255, 140, 0.795);
-}
-.marquee-two{
-    width: 120%;
-    height: 3rem;
-    margin-left: -52%;
+.slide_content-heading{
+    font-size: 4rem;
+    font-weight: 700;
     margin-top: 2rem;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: rgba(140, 255, 255, 0.795);
+    letter-spacing: 3px;
+    line-height: 5rem;
 }
+
+
+
 /* Begin tour-event */
 .tour_event{
-    width: 100%;
+    width: 90%;
     display: flex;
-    margin-left: 2rem;
-    justify-content: center;
-    background-color: var(--black-color);
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4rem;
+    /* background-color: rgb(193, 237, 255); */
     display: none;
 }
 .tour_event-section{
-    
-    width: 30%;
-    margin: 1.6rem;
-    
-}
-.tour_event-img{
-    width: 100%;
-    height: 76%;
-    border-radius: 50%;
-    border: 2px solid var(--white-color);
-    padding: 2px;
-    margin-top: 1rem;
-}
-.event-section_description{
-    background-color: var(--white-color);
-    padding: 1.1rem;
-    margin-top: 1rem;
-    padding-left: 2rem;
-}
-.event-section_des--place{
     display: flex;
     justify-content: center;
-    font-size: 1.6rem;
-    font-weight: 600;
+    align-items: center;
+    width: 80%;
+    margin: 2rem auto;
     
 }
-.event-section_des--time{
+
+.tour_event-img img{
+    width: 100%;
+    height: 100%;
+    border: 16px solid transparent;
+    border-image: url(../border_image/1.jpg) 30 round;    
+    
+}
+.tour_event-img {
+    width: 150px;
+    height: 250px;
+    overflow: hidden;
+    margin-left: 10%;
+    
+
+}
+.event-section_description{
+    /* background-color: var(--white-color); */
+    width: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+}
+.event-section_des--place{
+    
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    font-weight: 400;
+    color: rgb(216, 134, 27);
+    text-shadow: 6px 6px 5px rgba(255, 195, 30, 0.6),  3px 3px 4px rgba(255, 195, 30, 0.6);
+
+    border-bottom: dotted 4px #aaa;
+}
+.event-section_des--place p{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    
+    
+}
+.event-section_des--place span{
+    margin: 0 auto;
+    color: rgb(218, 72, 14);
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+
+
+}
+.event-section_des--band {
+    display: flex;
+    font-size: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.event-section_des--time,.event-section_des--address{
     font-size: 1.4rem;
     font-style: italic;
     margin: 1rem 0;
@@ -181,8 +270,9 @@
 /* begin-teaching-schedule */
 
 .teaching-time{
-    width: 100%;
-    margin-left: 10%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     display: none;
     
 }
@@ -192,67 +282,62 @@
     margin-bottom: 2rem;
 }
 .teaching-time_table{
-    width: 80%;
-    background-color: rgb(163, 237, 255);
+    width: 100%;
+    background-color: var(--white-color);
     text-align: center;
     font-size: 1.4rem;
 
 }
-.table-time_day{
+
+.class-modern{
+    /* background-color: rgb(255, 203, 59); */
     background-color: rgb(0, 173, 216);
 
-}
-.table-time{
-    background-color: rgb(255, 203, 59);
     
 }
-.table_day-session{
-    background-color: rgb(171, 253, 123);
+.class-classic{
+    background-color: rgb(224, 117, 117);
     
 }
-.table_day{
-    background-color: rgb(221, 127, 127);
 
-}
-
-/* list-teacher */
-.teacher_list-info p{
+/* list-class */
+.class_list-info--heading{
     font-size: 2rem;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
-.list_teacher{
+.list_class{
     width: 100%;
     display: flex;
-    margin-top: 3rem;
-    padding: 0 2rem;
-    margin-left: -2rem;
+    text-align:justify;
 }
-.teacher_item{
-    width: 30%;
+.class_item{
+    width: 33%;
+    margin: 0 2rem;
 }
-.teacher_img img{
-    width: 28rem;
-    height: 28rem;
-}
-.teacher-description{
+
+.class-description{
     font-size: 1.2rem;
-    margin-left: 4px;
 }
-.teacher-name{
+.class-name{
     display: flex;
-    padding-right: 10rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     margin: 0.8rem 0;
     justify-content: center;
 }
-.time-case{
-    margin: 0.5rem 0;
+.class-detal p{
+    font-size: 1.4rem;
 }
-.time-experience{
-    margin: 0.5rem 0;
+.class-object span, .class-content span{
+    font-weight: 600;
 }
+.class-object{
+    height: 4.6rem;
+}
+.class-content{
 
+}
 /* Begin product */
 
 .list_product{
@@ -267,9 +352,14 @@
     width: 80%;
     margin: 2rem 0;
 }
+.product-item_img{
+    overflow: hidden;
+    width: 240px;
+    height: 360px;
+}
 .product-item_img img{
-    width: 22rem;
-    height: 27rem;
+    width: 100%;
+    height: auto;
     
 }
 .product-item_description{
@@ -332,26 +422,33 @@
     width: 80%;
     
 }
+.support_form-user--info{
+    width: 25%;
+}
+.support_form-name,.support_form-title{
+    height: 100px;
+}
 .support_form{
-    width: 100%;
+    width: 80%;
     font-size: 1.4rem;
-    margin: 4rem 0;
+    margin: 4rem auto;
 }
 .support_form form{
     display: flex;
     justify-content: space-evenly;
 }
 .form_name, .form_email{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
     width: 120%;
     height: 3rem;
-    padding-left: 0.5rem;
+    margin-left: 1rem;
 
 }
+
 .form_title{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     width: 100%;
     height: 4rem;
     padding-left: 0.5rem;
@@ -359,7 +456,7 @@
 
 }
 .form_content{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
     width: 100%;
     height: 8rem;
