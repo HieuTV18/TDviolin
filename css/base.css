@@ -45,4 +45,14 @@ table,th,td{
 tr{
     height: 4rem;
 }
-
+td{
+    background-color: rgb(159, 211, 128);;
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
