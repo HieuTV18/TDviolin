@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-s.0">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
     <script src="./javascript.js" defer></script>
 
     <title>ThuyDuongViolin.vn</title>
 </head>
+
 <body>
     <div class="app">
         <div class="app_header">
@@ -18,12 +20,12 @@
                 <a href=""><img src="./image/logoviolin.jpg" alt="Logo"></a>
             </div>
             <div class="header_heading">
-                <i> ThuyDuong </i> Violin
-                <p class="header_saying">
-                    You can do it!
-                </p>
+                <div><i> ThuyDuong </i><span> Violinist</span></div>
+                <marquee behavior="alternate" scrollamount="3" class="header_saying">
+                    Làm điều mình thích sớm nhất có thể!
+                </marquee>
             </div>
-            
+
 
         </div>
         <div class="app_navbar">
@@ -34,7 +36,7 @@
                     </a>
                 </li>
                 <li id="teaching_schedule" class="menu_item">
-                    <a href="#"  class="menu_item-link">
+                    <a href="#" class="menu_item-link">
                         Lịch diễn
                     </a>
                 </li>
@@ -56,202 +58,310 @@
             </ul>
         </div>
         <div id="slideshow" class="slideshow">
-            <img id="img" onclick="changeImage()" src="./image/slideshow/IMG_0249.JPG" alt="" class="slideshow_img">
-            <!-- <div class="slideshow_control">
-                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img1" checked>
-                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img2">
-                <input class="radio-ctrl" type="radio" name="radio-control" id="radio-img3">
-
-            </div> -->
+            <!-- <img id="img" onclick="changeImage()" src="./image/slideshow/IMG_0249.JPG" alt="" class="slideshow_img"> -->
+            <div class="slide_wrap"></div>
             <div class="slide_content">
-                <div class="slide_content-time">
-
-                    <!-- <i class="fas fa-ar-alt"></i> -->
-                    <class class="fas fa-birthday-cake"></class>
-                    <span>12 Jan 1995</span>
+                <div class="slide_content-title">
+                    Thùy Dương
                 </div>
                 <div class="slide_content-heading">
-                    Làm điều mình thích sớm nhất có thể!
+
+                    Giữa những trầm bổng của cuộc sống,<br> tôi chọn cho mình vài nốt lặng với đam mê.
                 </div>
-                <marquee class="marquee-one" behavior="alternate" scrolldelay="200">
-                    Giữa những trầm bổng của cuộc sống, tôi chọn cho mình vài nốt lặng với đam mê.
 
-                </marquee>
-                <marquee id="marquee-two" class="marquee-two" behavior="scroll" direction="left" scrolldelay="100">
-                    <div onmouseover= "document.getElementById('marquee-two').stop();"
-                    onmouseout="document.getElementById('marquee-two').start();">
-                        Phải đủ dũng cảm và nghị lực đối diện với những nốt trầm nhất trong bản nhạc. Khi đó, ta mới có những phút giây thăng hoa cho những nốt bổng tiếp theo. 
-                    </div>
 
-                </marquee>
             </div>
         </div>
         <div id="tour_event" class="tour_event">
             <div class="tour_event-section">
-                <img class="tour_event-img" src="./image/tour/IMG_4421.JPG" alt="">
+
                 <div class="event-section_description">
-                    <div class="event-section_des--place">Intercontinental Resort</div>
+                    <div class="event-section_des--place">
+                        <p> Intercontinental</p> <span> Resort </span>
+                    </div>
+                    <div class="event-section_des--band">
+                        Thùy Dương & Wasabi Band
+                    </div>
                     <div class="event-section_des--time">Friday 8 June 2021</div>
+                    <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
-                        Rất mong được gặp bạn. <br>
-                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                        Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
                     <button class="event-section_btn btn">Đặt vé</button>
                 </div>
+                <div class="tour_event-img">
+
+                    <img src="./image/tour/IMG_4421.JPG" alt="">
+                </div>
+                <div class="tour_event-section--border"></div>
+
             </div>
             <div class="tour_event-section">
-                <img class="tour_event-img" src="./image/tour/42c653e422b217f87e604b49b9eb6424.jpg" alt="">
+
                 <div class="event-section_description">
-                    <div class="event-section_des--place">For You Restaurant</div>
-                    <div class="event-section_des--time">Saturday 12 June 2021</div>
+                    <div class="event-section_des--place">
+                        <p> For You</p> <span> Retaurant </span>
+                    </div>
+                    <div class="event-section_des--band">
+                        Thùy Dương & Wasabi Band
+                    </div>
+                    <div class="event-section_des--time">Friday 8 June 2021</div>
+                    <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
-                        Rất mong được gặp bạn. <br>
-                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                        Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
                     <button class="event-section_btn btn">Đặt vé</button>
                 </div>
+                <div class="tour_event-img">
+
+                    <img src="./image/tour/42c653e422b217f87e604b49b9eb6424.jpg" alt="">
+                </div>
+                <div class="tour_event-section--border"></div>
             </div>
             <div class="tour_event-section">
-                <img class="tour_event-img" src="./image/tour/IMG_3155.JPG" alt="">
+
                 <div class="event-section_description">
-                    <div class="event-section_des--place">BaNa Hills</div>
-                    <div class="event-section_des--time">Sunday 19 June 2021</div>
+                    <div class="event-section_des--place">
+                        <p> BaNa Hills</p> <span> Da Nang </span>
+                    </div>
+                    <div class="event-section_des--band">
+                        Thùy Dương & Wasabi Band
+                    </div>
+                    <div class="event-section_des--time">Friday 8 June 2021</div>
+                    <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
-                        Rất mong được gặp bạn. <br>
-                        Hãy đến để thưởng thức những giai điệu tuyệt vời.</div>
+                        Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
                     <button class="event-section_btn btn">Đặt vé</button>
                 </div>
+                <div class="tour_event-img">
+
+                    <img src="./image/tour/IMG_3155.JPG" alt="">
+                </div>
+                <div class="tour_event-section--border"></div>
+
             </div>
         </div>
         <div id="teaching-time" class="teaching-time">
             <div class="teaching-time_heading">Lịch dạy Violin :</div>
             <table class="teaching-time_table">
                 <tr>
-                    <th class="table-time_day"  colspan="2" rowspan="2">Ngày</th>
-                    <th class="table-time" colspan="6">Thời gian
-                        <tr>
-                            <th  class="table_day-session"  colspan="2">Buổi sáng
-                                
-                            </th>
-                            <th class="table_day-session"  colspan="2">Buổi chiều
-                                
-                            </th>
-                            <th class="table_day-session"  colspan="2">Buổi tối
-                                
-                            </th>
-                            
-                        </tr>
+                    <th colspan="2" >Thời gian</th>
+                
+                    <th >Thứ 2
+
                     </th>
+                    <th  >Thứ 3
+
+                    </th>
+                    <th  >Thứ 4
+
+                    </th>
+                    <th >Thứ 5
+
+                    </th>
+                    <th  >Thứ 6
+
+                    </th>
+                    <th >Thứ 7
+
+                    </th>
+                    <th  >Chủ Nhật
+
+                    </th>
+
+               
+                
                 </tr>
                 <tr>
-                    <td class="table_day" colspan="2">Thứ 2</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <th  colspan="2" rowspan="2">Sáng</th>
+
+
+                    <td>
+                        08h00 - 09h00
+                    </td>
+                    <td class="class-modern">
+                        08h00 - 09h00
+                    </td>
+                    <td class="class-modern">
+                        08h00 - 09h00
+                    </td>
+                    <td>
+                        08h00 - 09h00
+                    </td>
+                    <td class="class-classic">
+                        08h00 - 09h00
+                    </td>
+                    <td>
+                        08h00 - 09h00
+                    </td>
+                    <td class="class-classic">
+                        08h00 - 09h00
+                    </td>
+
                 </tr>
                 <tr>
-                    <td class="table_day" colspan="2">Thứ 3</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <td>
+                        09h15 - 10h15
+                    </td>
+                    <td class="class-modern">
+                        09h15 - 10h15
+                    </td>
+                    <td>
+                        09h15 - 10h15
+                    </td>
+                    <td class="class-modern">
+                        09h15 - 10h15
+                    </td>
+                    <td class="class-classic">
+                        09h15 - 10h15
+                    </td>
+                    <td>
+                        09h15 - 10h15
+                    </td>
+                    <td>
+                        09h15 - 10h15
+                    </td>
                 </tr>
                 <tr>
-                    <td class="table_day"  colspan="2">Thứ 4</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <th  colspan="2" rowspan="2">Chiều</th>
+
+
+                    <td class="class-modern">
+                        14h00 - 15h15
+                    </td>
+                    <td class="class-modern">
+                        14h00 - 15h15
+                    </td>
+                    <td>
+                        14h00 - 15h15
+                    </td>
+                    <td class="class-classic">
+                        14h00 - 15h15
+                    </td>
+                    <td>
+                        14h00 - 15h15
+                    </td>
+                    <td class="class-modern">
+                        14h00 - 15h15
+                    </td>
+                    <td>
+                        14h00 - 15h15
+                    </td>
+
                 </tr>
                 <tr>
-                    <td class="table_day"  colspan="2">Thứ 5</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <td class="class-classic">
+                        15h15 - 16h15
+                    </td>
+                    <td>
+                        15h15 - 16h15
+                    </td>
+                    <td>
+                        15h15 - 16h15
+                    </td>
+                    <td class="class-modern">
+                        15h15 - 16h15
+                    </td>
+                    <td>
+                        15h15 - 16h15
+                    </td>
+                    <td>
+                        15h15 - 16h15
+                    </td>
+                    <td class="class-modern">
+                        15h15 - 16h15
+                    </td>
                 </tr>
                 <tr>
-                    <td class="table_day"  colspan="2">Thứ 6</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <th  colspan="2" rowspan="2">Tối</th>
+
+
+                    <td class="class-classic">
+                        18h00 - 19h00
+                    </td>
+                    <td>
+                        18h00 - 19h00
+                    </td>
+                    <td class="class-modern">
+                        18h00 - 19h00
+                    </td>
+                    <td>
+                        18h00 - 19h00
+                    </td>
+                    <td>
+                        18h00 - 19h00
+                    </td>
+                    <td class="class-modern">
+                        18h00 - 19h00
+                    </td>
+                    <td>
+                        18h00 - 19h00
+                    </td>
+
                 </tr>
                 <tr>
-                    <td class="table_day"  colspan="2">Thứ 7</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
+                    <td>
+                        19h15 - 20h15
+                    </td>
+                    <td class="class-modern">
+                        19h15 - 20h15
+                    </td>
+                    <td>
+                        19h15 - 20h15
+                    </td>
+                    <td>
+                        19h15 - 20h15
+                    </td>
+                    <td class="class-modern">
+                        19h15 - 20h15
+                    </td>
+                    <td>
+                        19h15 - 20h15
+                    </td>
+                    <td class="class-classic">
+                        19h15 - 20h15
+                    </td>
                 </tr>
-                <tr>
-                    <td class="table_day"  colspan="2">Chủ Nhật</td>
-                    <td>08h00 - 09h00</td>
-                    <td>09h15 - 10h15</td>
-                    <td>14h00 - 15h00</td>
-                    <td>15h15 - 16h15</td>
-                    <td>18h00 - 19h00</td>
-                    <td>19h15 - 20h15</td>
-                    
-                </tr>                
+
             </table>
-            <div class="teacher_list-info">
+            <div class="class_list-info">
 
 
-                <p>Thông tin giảng viên:</p>
-    
-                <div class="list_teacher">
-                    <div class="teacher_item">
-    
-                        <div class="teacher_img">
-                            <img src="./image/teacher/145347614_4983844608354338_8312152495185519322_n.jpg" alt="">
-                        </div>
-                        <div class="teacher-description">
-                            <div class="teacher-name">- Hoàng An</div>
-                            <div class="time-case">- Suất dạy: Buổi sáng.</div>
-                            <div class="time-experience">- 4 năm kinh nghiệm.</div>
-                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
-                        </div>
-                    </div>
-                    <div class="teacher_item">
-    
-                        <div class="teacher_img">
-                            <img src="./image/teacher/168496440_4089499561148584_6670861843463644778_n.jpg" alt="">
-                        </div>
-                        <div class="teacher-description">
-                            <div class="teacher-name">Thùy Dương</div>
-                            <div class="time-case">- Suất dạy: Buổi chiều.</div>
-                            <div class="time-experience">- 3 năm kinh nghiệm.</div>
-                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
+                <div class="class_list-info--heading">Thông tin khóa học:</div>
+
+                <div class="list_class">
+                    <div class="class_item">
+
+                        
+                        <div class="class-description">
+                            <div class="class-name">Lớp nền tảng</div>
+                            <div class="class-detal">
+                                <p class="class-object"> - <span>Đối tượng </span> : Người mới bắt đầu với violin.</p>
+                                <p  class="class-content"> - <span> Nội dung:</span> Lớp học khoảng 4-5 người, học từ từ thế chơi đàn đến những bản nhạc đầu tiên.</p>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="teacher_item">
-    
-                        <div class="teacher_img">
-                            <img src="./image/teacher/152397419_1842953749185152_7305449962791919598_n.jpg" alt="">
+                    <div class="class_item">
+                        
+                        <div class="class-description">
+                            <div class="class-name">Lớp hiện đại</div>
+                            <div class="class-detal">
+                                <p class="class-object"> - <span> Đối tượng </span> : Đã hoàn thành khoá nền tảng violin tại trung tâm hoặc đã học violin khoảng 2 năm.</p>
+                                <p  class="class-content"> - <span> Nội dung</span>: Chuyên về những tác phẩm hiện đại, nhạc cải cách.</p>
+                            </div>
+                            
+                            
                         </div>
-                        <div class="teacher-description">
-                            <div class="teacher-name">Hải Lý</div>
-                            <div class="time-case">- Suất dạy: Buổi tối.</div>
-                            <div class="time-experience">- 4 năm kinh nghiệm.</div>
-                            <div class="teacher_style">- Vui tính, yêu trẻ con. Lớp học ngập tràn tiếng cười.</div>
+                    </div>
+                    <div class="class_item">
+                        
+                        
+                        <div class="class-description">
+                            <div class="class-name">Lớp cổ điển</div>
+                            <div class="class-detal">
+                                <p class="class-object"> - <span > Đối tượng </span> : Đã hoàn thành khoá nền tảng violin tại trung tâm hoặc đã học violin khoảng 2 năm.</p>
+                                <p class="class-content"> - <span > Nội dung</span>: Chuyên về những tác phẩm cổ điển, nhạc ngoại hay những bản nhạc bất hủ.</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -273,7 +383,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: RV-205 <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -299,7 +410,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: OMEBO <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -325,7 +437,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: V182 <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 1/8, 1/10, 1/4, 2/4, 3/4, 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -352,7 +465,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: Classic MD <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -378,7 +492,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: Carlo giordan <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 1/4, 2/4, 3/4 , 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -404,7 +519,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: RV-205 <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -430,7 +546,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: OMEBO <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -456,7 +573,8 @@
                     <div class="product-item_description--detail">
                         <p>
                             Mã sản phẩm: V182 <br>
-                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh, sinh viên. <br>
+                            Là một trong những dòng violin có chất lượng âm thanh tốt, thích hợp dùng cho giới học sinh,
+                            sinh viên. <br>
                             Kích cỡ: 1/8, 1/10, 1/4, 2/4, 3/4, 4/4 <br>
                             Omebo Violin RV-205 <br>
                             Đàn Violin vân thật <br>
@@ -473,38 +591,41 @@
                 <img src="./image/map.JPG" alt="" class="support_map-img">
             </div>
             <div class="support_form">
-            <form>
-                <div class="support_form-user--info">
+                <form>
+                    <div class="support_form-user--info">
 
-                    <div class="support_form-name">
-    
-                        Họ và Tên: <br>
-                        <input class="form_name" type="text" name="user_name" placeholder="Điền tên của bạn"><br>
+                        <div class="support_form-name">
+
+                            Họ và Tên: <br>
+                            <input class="form_name" type="text" name="user_name" placeholder="Điền tên của bạn"><br>
+                        </div>
+                        <div class="support_form-email">
+                            Email: <br>
+                            <input class="form_email" type="email" name="user_email"
+                                placeholder="Điền địa chỉ email của bạn"><br>
+                        </div>
+                        <div class="support_form-sumit">
+                            <input type="submit" value="Gửi tin nhắn">
+                        </div>
                     </div>
-                    <div class="support_form-email">
-                        Email: <br>
-                        <input class="form_email" type="email" name="user_email" placeholder="Điền địa chỉ email của bạn" ><br>
-                    </div>
-                    <div class="support_form-sumit">
-                        <input type="submit" value="Gửi tin nhắn">
-                    </div>
-                </div>
-                <div class="support_form-message">
+                    <div class="support_form-message">
 
 
-                    <div class="support_form-title">
-    
-                        Tiêu đề: <br>
-                    <textarea class="form_title" name="" id="" cols="60" rows="2"placeholder="Điền chủ đề chính cho tin nhắn của bạn"></textarea>
+                        <div class="support_form-title">
+
+                            Tiêu đề: <br>
+                            <textarea class="form_title" name="" id="" cols="60" rows="2"
+                                placeholder="Điền chủ đề chính cho tin nhắn của bạn"></textarea>
+                        </div>
+                        <div class="support_form-content">
+
+                            Nội dung: <br>
+                            <textarea class="form_content" name="" id="" cols="60" rows="5"
+                                placeholder="Nội dung tin nhắn"></textarea>
+                        </div>
                     </div>
-                    <div class="support_form-content">
-    
-                        Nội dung: <br>
-                        <textarea class="form_content" name="" id="" cols="60" rows="5"placeholder="Nội dung tin nhắn"></textarea>
-                    </div>
-                </div>
-                
-            </form>
+
+                </form>
             </div>
         </div>
 
@@ -532,14 +653,15 @@
                 <li class="contact_item">
                     <i class="contact_icon fas fa-share-alt"></i>
                     <span class="contact_text">Social </span> <span class="space_symbol">:</span>
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-google-plus-square"></i>
-                    
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-google-plus-square"></i>
+
                 </li>
             </ul>
         </div>
-        
+
     </div>
-    
+
 </body>
+
 </html>
