@@ -45,7 +45,7 @@ table,th,td{
 tr{
     height: 4rem;
 }
-td{
+td,#class-basic{
     background-color: rgb(159, 211, 128);;
 }
 @keyframes FadeIn{
