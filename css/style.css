@@ -25,12 +25,12 @@
 
 }
 .app_header .header_heading{
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 1rem;
     
 }
 .header_heading i{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     text-shadow: 
 		1px 0px 1px #bbb, 0px 1px 1px #ddd, 
@@ -289,13 +289,13 @@
 
 }
 
-.class-modern{
+.class-modern,#class-modern{
     /* background-color: rgb(255, 203, 59); */
     background-color: rgb(0, 173, 216);
 
     
 }
-.class-classic{
+.class-classic, #class-classic{
     background-color: rgb(224, 117, 117);
     
 }
@@ -319,12 +319,21 @@
 .class-description{
     font-size: 1.2rem;
 }
+.class-name span{
+    width: 50px;
+    height: 20px;
+    margin-left: 1rem;
+}
+
+
+
 .class-name{
     display: flex;
     font-size: 1.6rem;
     font-weight: 600;
     margin: 0.8rem 0;
     justify-content: center;
+    align-items: center;
 }
 .class-detal p{
     font-size: 1.4rem;
