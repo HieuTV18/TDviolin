@@ -2,7 +2,7 @@
     max-width: 1280px;
     background-color: rgb(255, 242, 223);
     padding-top: 2rem;
-    margin-left: 3rem;
+    margin: 0 auto;
     margin-top: -10px;
     margin-bottom: -16px;
 }
@@ -106,37 +106,52 @@
     width: 100%;
     height: 600px;
     display: block;
-}
-/* .slideshow img{
-    width: 96%;
-    height: 50%;
-    margin: 0 3rem;
-    opacity: 0.4;
+    margin: 0 auto;
+    justify-content: center;
     
-} */
+}
+
 .slide_wrap{
     position: absolute;
-    background-image: url(../image/slideshow/IMG_0249.JPG);
+    background-image: url(../image/slideshow/1.JPG);
     background-position-y: 50%;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: slide 40s infinite, FadeIn 0.8s linear;
+    animation: slide 100s infinite, FadeIn 0.8s linear;
 
 }
 @keyframes slide{
-    25%{
-        background-image: url(../image/slideshow/IMG_0249.JPG);
+    10%{
+        background-image: url(../image/slideshow/1.JPG);
+    }
+    20%{
+        background-image: url(../image/slideshow/2.JPG);
+    }
+    30%{
+        background-image: url(../image/slideshow/3.JPG);
+    }
+    40%{
+        background-image: url(../image/slideshow/4.JPG);
     }
     50%{
-        background-image: url(../image/slideshow/IMG_0251.JPG);
+        background-image: url(../image/slideshow/5.JPG);
     }
-    75%{
-        background-image: url(../image/slideshow/IMG_0877.JPG);
+    60%{
+        background-image: url(../image/slideshow/6.JPG);
+    }
+    70%{
+        background-image: url(../image/slideshow/7.JPG);
+    }
+    80%{
+        background-image: url(../image/slideshow/8.JPG);
+    }
+    90%{
+        background-image: url(../image/slideshow/9.jpg);
     }
     100%{
-        background-image: url(../image/slideshow/IMG_2189.JPG);
+        background-image: url(../image/slideshow/10.jpg);
     }
 
 }
@@ -157,15 +172,10 @@
         transform: translate(-50%,50%);
     }
     100%{
-        transform: translate(-50%,-80%);
+        transform: translate(-50%,-100%);
     }
 }
-.slide_content-title{
-    color: var(--primary-color);
-    opacity: 0.7;
-    font-size: 5rem;
-    line-height: 6rem;
-}
+
 .slide_content-heading{
     font-size: 4rem;
     font-weight: 700;
@@ -216,7 +226,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-   
+    width: 35%;
     
 }
 .event-section_des--place{
@@ -372,7 +382,7 @@
     
 }
 .product-item_description{
-    width: 70%;
+    width: 50%;
     margin-left: 4rem;
 }
 .product-item_description--name{
