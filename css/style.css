@@ -161,7 +161,7 @@
     width: 100%;
     top: 30%;
     right: -50%;
-    color: rgb(45, 163, 218);
+    color: var(--primary-color);
     justify-content: center;
     text-align: center;
     transform: translate(-50%,-50%);
@@ -178,7 +178,7 @@
 }
 
 .slide_content-heading{
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 700;
     margin-top: 2rem;
     letter-spacing: 3px;
@@ -606,6 +606,7 @@
     right: 40px;
     font-size: 30px;
     display: none;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     border: 2px solid #000;
