@@ -2,7 +2,7 @@
     --black-color: #000;
     --white-color: #fff;
     --text-color: #333;
-    --primary-color: #ff9100;
+    --primary-color: rgb(255, 145, 0);
     --border-color: #dbdbdb;
     
     
@@ -38,6 +38,14 @@ a{
     cursor: pointer;
     opacity: 0.8;
     transition: 0.5s;
+}
+.btn a{
+    color: var(--white-color);
+
+}
+.btn a:hover{
+    color: var(--primary-color);
+
 }
 table,th,td{
     border: 1px solid black;
