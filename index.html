@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-s.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-s.0"> -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
-    <script src="./javascript.js" defer></script>
+    <script src="./mainJS.js" defer></script>
 
     <title>ThuyDuongViolin.vn</title>
 </head>
@@ -62,9 +62,7 @@
             <!-- <img id="img" onclick="changeImage()" src="./image/slideshow/IMG_0249.JPG" alt="" class="slideshow_img"> -->
             <div class="slide_wrap"></div>
             <div class="slide_content">
-                <!-- <div class="slide_content-title">
-                    Thùy Dương
-                </div> -->
+                
                 <div class="slide_content-heading">
 
                     Giữa những trầm bổng của cuộc sống,<br> tôi chọn cho mình vài nốt lặng với đam mê.
@@ -87,7 +85,9 @@
                     <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
                         Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
-                    <button class="event-section_btn btn">Đặt vé</button>
+                    <div>
+                        <input type="button" class="btn event-section_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Đặt vé">
+                    </div>
                 </div>
                 <div class="tour_event-img">
 
@@ -109,7 +109,9 @@
                     <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
                         Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
-                    <button class="event-section_btn btn">Đặt vé</button>
+                    <div>
+                        <input type="button" class="btn event-section_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Đặt vé">
+                    </div>
                 </div>
                 <div class="tour_event-img">
 
@@ -130,7 +132,9 @@
                     <div class="event-section_des--address">Bán đảo Sơn Trà, Đà Nẵng</div>
                     <div class="event-section_des--info">
                         Những giai điệu tuyệt vời vẫn đang chờ đón bạn!</div>
-                    <button class="event-section_btn btn">Đặt vé</button>
+                    <div>
+                        <input type="button" class="btn event-section_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Đặt vé">
+                    </div>
                 </div>
                 <div class="tour_event-img">
 
@@ -368,7 +372,20 @@
                 </div>
             </div>
         </div>
+
+        <!-- nav method support and help-contact -->
+        <div id="methodSupport" class="methodSupport">
+            <div class="messenger">
+                <button ><i class="fab fa-facebook-messenger"><span> Messenger</span></i></button>
+            </div>
+            <div class="call_phone">
+                <button><i class="fas fa-phone-alt"><span> 0987456789</span></i></button>
+            </div>
+           
+        </div>
+
         <div id="list_product" class="list_product">
+            
             <div class="list_product-item">
                 <div class="product-item_img">
                     <img src="./image/product/1.william-lewis-sons-wl17e14ch-400x400.jpg" alt="">
@@ -391,7 +408,11 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <div>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+                    </div>
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -416,7 +437,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -442,7 +465,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -468,7 +493,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -494,7 +521,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -520,7 +549,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -546,7 +577,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -572,7 +605,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -598,7 +633,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
             <div class="list_product-item">
@@ -624,7 +661,9 @@
 
                         </p>
                     </div>
-                    <button class="btn buy-product_btn">Liên hệ</button>
+                    <input type="button" class="btn buy-product_btn" onfocus="ShowMethodSupport()" onblur="HiddenMethodSupport()" value="Liên hệ">
+
+
                 </div>
             </div>
         </div>
@@ -633,38 +672,46 @@
                 <img src="./image/map.JPG" alt="" class="support_map-img">
             </div>
             <div class="support_form">
-                <form>
+                <form action="" method="POST" class="form-2" id="form-2">
                     <div class="support_form-user--info">
 
-                        <div class="support_form-name">
+                        <div class="form-group support_form-name">
+                            <label for="fullname" class="form-label">Họ và Tên</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="VD: Trương Văn Hiếu" class="form-control">
+                            <span class="form-message"></span>
+            
+                        </div>
 
-                            Họ và Tên: <br>
-                            <input class="form_name" type="text" name="user_name" placeholder="Điền tên của bạn"><br>
+                        <div class="form-group support_form-email">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" id="email" name="email" placeholder="VD: Email@domain.com" class="form-control">
+                            <span class="form-message"></span>
+            
                         </div>
-                        <div class="support_form-email">
-                            Email: <br>
-                            <input class="form_email" type="email" name="user_email"
-                                placeholder="Điền địa chỉ email của bạn"><br>
-                        </div>
+
                         <div class="support_form-sumit">
-                            <input type="submit" value="Gửi tin nhắn">
+                            <button class="form-submit">Đăng ký</button>
+
                         </div>
                     </div>
+
                     <div class="support_form-message">
 
-
-                        <div class="support_form-title">
-
-                            Tiêu đề: <br>
-                            <textarea class="form_title" name="" id="" cols="60" rows="2"
-                                placeholder="Điền chủ đề chính cho tin nhắn của bạn"></textarea>
+                        <div class="form-group support_form-title">
+                            <label for="title" class="form-label">Tiêu đề</label>
+                            <textarea class="form-control form_title" name="title" id="title" cols="60" rows="2" placeholder="VD: mua hàng, tư vấn"></textarea>
+                            <span class="form-message"></span>
+            
                         </div>
-                        <div class="support_form-content">
 
-                            Nội dung: <br>
-                            <textarea class="form_content" name="" id="" cols="60" rows="5"
-                                placeholder="Nội dung tin nhắn"></textarea>
+                        <div class="form-group support_form-title">
+                            <label for="content" class="form-label">Nội dung</label>
+                            <textarea class="form-control form_content" name="content" id="content" cols="60" rows="5" placeholder="Nội dung tin nhắn"></textarea>
+                            <span class="form-message"></span>
+            
                         </div>
+
+                        
                     </div>
 
                 </form>
@@ -695,14 +742,47 @@
                 <li class="contact_item">
                     <i class="contact_icon fas fa-share-alt"></i>
                     <span class="contact_text">Social </span> <span class="space_symbol">:</span>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-google-plus-square"></i>
+                    <a href="https://www.facebook.com/truongvan.hieu.167/"><i class="fab contact_icon fa-facebook-square"></i></a>
+                    <i class="fab contact_icon fa-google-plus-square"></i>
 
                 </li>
             </ul>
         </div>
 
+        <!-- button go on top  -->
+        <div id="gototop" onclick="goToTop()" class="gototop">
+            <i class="fas fa-chevron-circle-up"></i>
+            <a class="gototop_link" href="javascript:;">TOP</a>
+        </div>
+
+        
+
     </div>
+    <script src="./validator.js"></script>
+
+    <script>
+        Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname','Nhập tên đầy đủ của bạn'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#title'),
+                Validator.isRequired('#content')
+                // Validator.minLength('#password',6, 'Mật khẩu ít nhất 6 ký tự'),
+                // Validator.isRequired('#password_confirmation'),
+                // Validator.isConfirmed('#password_confirmation', function(){
+                //     return document.querySelector('#form-1 #password').value;
+                // }, 'Mật khẩu nhập lại không chính xác')
+            ],
+            onSubmit: function(data){
+                console.log(data);
+            }
+        });
+
+    </script>
 
 </body>
 
