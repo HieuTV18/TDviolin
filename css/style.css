@@ -631,8 +631,8 @@
 }
 
 .contact_text{
-    display: inline-block;
-    /* text-align: right; */
+    
+    display: inline-flex;
     width: 6%;
 }
 
