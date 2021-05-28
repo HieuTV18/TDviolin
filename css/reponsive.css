@@ -80,6 +80,7 @@
     
     .contact_text{
         /* display: unset; */
+        font-size: 2rem;
         width: 10%;
         
     }
@@ -256,6 +257,7 @@
     }
     .contact_text{
         /* display: unset; */
+        font-size: 2rem;
         width: 10%;
         
     }
