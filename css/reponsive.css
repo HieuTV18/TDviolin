@@ -215,7 +215,10 @@
     .event-section_des--info {
         font-size: 1.4rem;
     }
-
+    .event-section_description {
+        
+        width: 55%;
+    }
     .benefit_heading {
         font-size: 1.2rem;
     }
@@ -241,6 +244,12 @@
     }
     .list_product-item{
         margin: 4rem 0;
+    }
+    .buy-product_btn {
+        width: 20rem;
+        font-size: 2rem;
+        height: 4rem;
+        
     }
     .contact_menu{
         font-size: 1.4rem;
