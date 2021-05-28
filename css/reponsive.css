@@ -74,9 +74,17 @@
         line-height: 2rem;
     }
     .contact_menu{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
-
+    
+    .contact_text{
+        display: unset;
+        width: 8%;
+        
+    }
+    .class-object {
+        height: 8rem;
+    }
     .support_help{
         width: 100%;
         display: none;
@@ -149,7 +157,7 @@
         
     }
     .slide_content{
-        top: 20%;
+        top: 25%;
     }
     .slide_content-heading {
         font-size: 2.2rem;
@@ -214,9 +222,17 @@
         font-size: 1.2rem;
         margin-top: 3rem;
     }
+    .class-object {
+        height: 8rem;
+    }
 
     .contact_menu{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+    .contact_text{
+        display: unset;
+        width: 8%;
+        
     }
     .form-2{
         display: flex;
@@ -234,10 +250,8 @@
         margin: 2rem 0;
     }
     .form-group input{
-        height: 30px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        outline: none;
+        height: 40px;
+        
     }
     .form-message{
         font-size: 12px;
