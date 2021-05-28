@@ -79,8 +79,8 @@
     }
     
     .contact_text{
-        display: unset;
-        width: 8%;
+        /* display: unset; */
+        width: 10%;
         
     }
     .class-object {
@@ -255,8 +255,8 @@
         font-size: 1.4rem;
     }
     .contact_text{
-        display: unset;
-        width: 8%;
+        /* display: unset; */
+        width: 10%;
         
     }
     .contact_icon{
