@@ -162,9 +162,9 @@
 }
 .slide_content{
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 30%;
-    right: -50%;
+    right: -42%;
     color: var(--primary-color);
     justify-content: center;
     text-align: center;
@@ -612,7 +612,7 @@
     border-bottom: 2px solid #ccc;
 }
 .contact_menu{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     width: 95%;
     margin-left: 5%;
     padding-bottom: 2rem;
@@ -625,7 +625,7 @@
     color: #fff;
 }
 .contact_icon{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin-right: 0.5rem;
     width: 1.4rem;
 }
