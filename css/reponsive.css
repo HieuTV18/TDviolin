@@ -237,7 +237,7 @@
     .contact_icon{
        
         margin-right: 0.5rem;
-        width: 1.6rem;
+        width: 2rem;
     }
     .form-2{
         display: flex;
@@ -263,11 +263,11 @@
         margin-top: 4px;
     }
     .form-label {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
     .support_form-sumit{
         position: absolute;
-        bottom: 290px;
+        bottom: 320px;
         width: 50%;
     }
     .support_form-message {
