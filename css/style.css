@@ -6,6 +6,8 @@
     margin-top: -10px;
     margin-bottom: -16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .app_header{
     display: flex;
@@ -83,8 +85,7 @@
     
 }
 .menu_item-link:hover{
-    /* background-color: var(--primary-color); */
-    /* font-size: 1.6rem; */
+    
     color: black;
     font-style: italic;
     transition: 1s;
@@ -103,24 +104,27 @@
 /* Begin slide-show */
 
 .slideshow{
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 600px;
+    height: auto;
     display: block;
-    margin: 0 auto;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .slide_wrap{
-    position: absolute;
+    position: relative;
     background-image: url(../image/slideshow/1.JPG);
     background-position-y: 50%;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     animation: slide 100s infinite, FadeIn 0.8s linear;
+    justify-content: center;
 
 }
 @keyframes slide{
@@ -185,8 +189,25 @@
     line-height: 5rem;
 }
 
+.introduce_violin{
+    
+    width: 90%;
+    margin: 4rem auto;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+.intro_heading{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.introduce_violin span{
+    font-weight: 700;
+}
+.introduce_violin p{
+    text-indent: 30px;
 
-
+}
 /* Begin tour-event */
 .tour_event{
     width: 90%;
@@ -194,7 +215,6 @@
     flex-direction: column;
     margin: 0 auto;
     margin-top: 4rem;
-    /* background-color: rgb(193, 237, 255); */
     display: none;
 }
 .tour_event-section{
@@ -312,6 +332,10 @@
 }
 
 /* list-class */
+.class_list-info{
+    line-height: 2rem;
+    margin: 3rem 0;
+}
 .class_list-info--heading{
     font-size: 2rem;
     margin-top: 3rem;
@@ -353,23 +377,35 @@
     font-weight: 600;
 }
 .class-object{
-    height: 4.6rem;
+    height: 5rem;
 }
-.class-content{
+.benefit_violin{
+    font-size: 1.6rem;
+    line-height: 2rem;
 
 }
+.benefit_violin p{
+    text-indent: 30px;
+}
+.benefit_heading{
+    font-size: 2rem;
+}
+.benefit_violin span{
+    font-weight: 700;
+}
+
+
+
 /* Begin product */
 
 .list_product{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 16%;
     display: none;
 }
 .list_product-item{
     display: flex;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     margin: 2rem 0;
 }
 .product-item_img{
@@ -558,6 +594,14 @@
 
 
 /* footer  */
+
+.app_footer{
+    
+    background-color: rgb(32, 30, 30);
+    color: var(--white-color);
+    margin-top: 6rem;
+}
+
 .footer_contact{
     display: flex;
     width: 80%;
@@ -578,7 +622,7 @@
     margin: 1.4rem 0;
 }
 .contact_item>a{
-    color: #000;
+    color: #fff;
 }
 .contact_icon{
     font-size: 2rem;
@@ -622,3 +666,5 @@
 .gototop i{
     margin: 8px auto;
 }
+
+
