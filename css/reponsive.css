@@ -203,6 +203,17 @@
     .event-section_des--place span {
         font-size: 2rem;
     }
+    .event-section_des--time, .event-section_des--address {
+        font-size: 1.6rem;
+        
+    }
+    .event-section_des--time, .event-section_des--address {
+        font-size: 1.8rem;
+    }
+    .event-section_des--info {
+        font-size: 1.4rem;
+    }
+
     .benefit_heading {
         font-size: 1.2rem;
     }
@@ -211,7 +222,7 @@
         line-height: 2rem;
     }
     .teaching-time_heading {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
@@ -227,7 +238,7 @@
         height: 8rem;
     }
     .list_product-item{
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
     .contact_menu{
         font-size: 1.4rem;
@@ -270,7 +281,7 @@
     }
     .support_form-sumit{
         position: absolute;
-        bottom: 320px;
+        bottom: 350px;
         width: 50%;
     }
     
