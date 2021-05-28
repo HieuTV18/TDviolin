@@ -16,6 +16,7 @@
     }
     .header_saying {
         margin-left: -10%;
+        width: 500px;
         
     }
     .class-object {
@@ -145,7 +146,7 @@
 @media only screen and (min-device-width:340px) and (max-device-width: 739px){
     
     .app_navbar .navbar_menu {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         
     }
     .app_header .header_heading {
@@ -153,7 +154,8 @@
     }
     .header_saying {
         
-        margin-left: -10%;
+        margin-left: -20%;
+        width: 600px;
         
     }
     .slide_content{
