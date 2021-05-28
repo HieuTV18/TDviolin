@@ -546,6 +546,7 @@
 .form-group{
     display: flex;
     flex-direction: column;
+    margin: 2rem 0;
 }
 .form-label{
     font-size: 1.5rem;
@@ -623,6 +624,7 @@
 }
 .contact_item>a{
     color: #fff;
+    margin-right: 2rem;
 }
 .contact_icon{
     /* font-size: 2rem; */
