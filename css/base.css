@@ -31,8 +31,8 @@ a{
     border: none;
     border-radius: 2px;
     height: 3rem;
-    width: 90%;
-    font-size: 1.8rem;
+    width: 50%;
+    font-size: 1.6rem;
 }
 .btn:hover{
     color: var(--primary-color);
