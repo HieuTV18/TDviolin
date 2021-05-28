@@ -311,6 +311,7 @@
     font-size: 2rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 .teaching-time_table{
     width: 100%;
@@ -340,6 +341,7 @@
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 .list_class{
     width: 100%;
@@ -389,9 +391,10 @@
 }
 .benefit_heading{
     font-size: 2rem;
+    font-weight: 600;
 }
 .benefit_violin span{
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -424,6 +427,7 @@
 }
 .product-item_description--name{
     font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
