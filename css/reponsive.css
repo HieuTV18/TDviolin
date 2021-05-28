@@ -226,7 +226,9 @@
     .class-object {
         height: 8rem;
     }
-
+    .list_product-item{
+        margin: 2rem 0;
+    }
     .contact_menu{
         font-size: 1.4rem;
     }
