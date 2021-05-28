@@ -2,7 +2,7 @@
 
 /* tablet width >= 740px and width<1024px */
 
-@media only screen and (min-width:340px) and (max-width: 1023px){
+@media only screen and (min-device-width:740px) and (max-device-width: 1023px){
     
     .app_header .header_heading{
         margin-left: -12rem;
@@ -21,15 +21,18 @@
     .class-object {
         height: 6.6rem;
     }
+    .slide_content{
+        top: 25%;
+    }
     .slide_content-heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
         
     }
     .methodSupport {
         
         width: 18%;
         height: 100%;
-        right: 12px;
+        right: 7px;
         
     }
     .methodSupport button {
@@ -37,15 +40,38 @@
         height: 6rem;
         font-size: 2.2rem;
     }
-    .list_product {
-        margin-left: 0;
-
-    }
-    .list_product-item{
-        margin-left: 30%;
-    }
+   
     .support_form-message {
         width: 50%;
+    }
+
+    .slide_wrap{
+        height: 400px;
+    }
+    .introduce_violin {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .intro_heading {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .introduce_violin span{
+        font-weight: 600;
+    }
+    .event-section_des--place p {
+        font-size: 3rem;
+        
+    }
+    .event-section_des--place span {
+        font-size: 2.5rem;
+    }
+    .benefit_heading {
+        font-size: 2rem;
+    }
+    .benefit_violin {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
 
@@ -57,9 +83,95 @@
     
     /* mobile: width<740px */
     
-@media only screen and (min-width:375px) and (max-width: 739px){
+@media only screen and (min-device-width:340px) and (max-device-width: 739px){
     
-    /* .list_product-item {
-            margin-left: -3px;
-    } */
+    .app_navbar .navbar_menu {
+        font-size: 1.7rem;
+        
+    }
+
+    .slide_content{
+        top: 20%;
+    }
+    .slide_content-heading {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        
+    }
+    .methodSupport {
+        
+        width: 18%;
+        height: 100%;
+        right: 7px;
+        
+    }
+    .methodSupport button {
+        width: 160px;
+        height: 6rem;
+        font-size: 2.2rem;
+    }
+    
+    .support_form-message {
+        width: 50%;
+    }
+
+    .slide_wrap{
+        height: 400px;
+    }
+    .introduce_violin {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .intro_heading {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .introduce_violin span{
+        font-weight: 600;
+    }
+    .event-section_des--place p {
+        font-size: 2.4rem;
+        
+    }
+    .event-section_des--place span {
+        font-size: 2rem;
+    }
+    .benefit_heading {
+        font-size: 1.2rem;
+    }
+    .benefit_violin {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .teaching-time_heading {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .teaching-time_table {
+        
+        font-size: 1.2rem;
+    }
+    .class_list-info--heading {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+
+    .contact_menu {
+        font-size: 1.8rem;
+        width: 95%;
+        margin-left: 3%;
+    }
+    .contact_text {
+        width: 10%;
+    }
+    .contact_icon {
+        margin-right: 0.5rem;
+        width: 1.4rem;
+    }
+    .space_symbol {
+        width: 2%;
+    }
+
+
 }
