@@ -73,7 +73,58 @@
         font-size: 1.2rem;
         line-height: 2rem;
     }
+    .contact_menu{
+        font-size: 1.4rem;
+    }
 
+    .support_help{
+        width: 100%;
+        display: none;
+    }
+    .support_map{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .support_map img{
+        width: 80%;
+        
+    }
+    
+    /* form */
+    .form-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .support_form-user--info{
+        width: 50%;
+        margin-right: 0;
+    }
+   
+    .form-label{
+        margin: 2rem 0;
+    }
+    .form-group input{
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+    .form-message{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .support_form-sumit{
+        position: absolute;
+        bottom: 340px;
+        width: 50%;
+    }
+    .support_form-message {
+        width: 50%;
+    }
 
 
 }
@@ -89,7 +140,14 @@
         font-size: 1.7rem;
         
     }
-
+    .app_header .header_heading {
+        margin-left: -12%;
+    }
+    .header_saying {
+        
+        margin-left: -10%;
+        
+    }
     .slide_content{
         top: 20%;
     }
@@ -157,21 +215,44 @@
         margin-top: 3rem;
     }
 
-    .contact_menu {
-        font-size: 1.8rem;
-        width: 95%;
-        margin-left: 3%;
+    .contact_menu{
+        font-size: 1.6rem;
     }
-    .contact_text {
-        width: 10%;
+    .form-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
     }
-    .contact_icon {
-        margin-right: 0.5rem;
-        width: 1.4rem;
+    .support_form-user--info{
+        width: 50%;
+        margin-right: 0;
     }
-    .space_symbol {
-        width: 2%;
+   
+    .form-label{
+        margin: 2rem 0;
     }
-
-
+    .form-group input{
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+    .form-message{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .support_form-sumit{
+        position: absolute;
+        bottom: 360px;
+        width: 50%;
+    }
+    .support_form-message {
+        width: 50%;
+    }
+    .app_footer {
+        
+        margin-top: 9rem;
+    }
 }
