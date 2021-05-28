@@ -284,7 +284,11 @@
         bottom: 450px;
         width: 50%;
     }
-    
+    .support_form-sumit button{
+        height: 4rem;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
     .app_footer {
         
         margin-top: 9rem;
