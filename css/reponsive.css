@@ -345,3 +345,23 @@
         margin-top: 9rem;
     }
 }
+
+
+@media only screen and (min-device-height:374px) and (max-device-height: 768px) and (min-device-width:340px) and (max-device-width: 739px){
+    .methodSupport{
+        position: fixed;
+        width: 80%;
+        height: 60%;
+        top: 100px;
+        left: 20px;
+        transform-origin: center;
+        animation: none;
+
+
+    }
+    .methodSupport button{
+        width: 300px;
+        height: 8rem;
+    }
+
+}
