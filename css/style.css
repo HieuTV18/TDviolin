@@ -505,6 +505,15 @@
     
 
 }
+.closeMethorSupport{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.btn_close{
+    /* background-color: red; */
+    color: red;
+}
 .methodSupport .fa-facebook-messenger{
     color: blue;
 }
