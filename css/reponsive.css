@@ -3,7 +3,10 @@
 /* tablet width >= 740px and width<1024px */
 
 @media only screen and (min-device-width:740px) and (max-device-width: 1023px){
-    
+    .app_navbar .navbar_menu {
+        font-size: 2rem;
+        font-weight: 600;
+    }
     .app_header .header_heading{
         margin-left: -12rem;
     }
@@ -116,7 +119,23 @@
         width: 50%;
         margin-right: 0;
     }
-   
+    .methodSupport{
+        position: fixed;
+        width: 80%;
+        height: 50%;
+        top: 400px;
+        left: 20px;
+        transform-origin: center;
+
+    }
+    .methodSupport button{
+        width: 400px;
+        height: 10rem;
+        font-size: 4rem;
+        
+        
+    
+    }
     .form-label{
         margin: 2rem 0;
     }
@@ -279,7 +298,23 @@
         width: 50%;
         margin-right: 0;
     }
-   
+    .methodSupport{
+        position: fixed;
+        width: 80%;
+        height: 50%;
+        top: 500px;
+        left: 20px;
+        transform-origin: center;
+
+    }
+    .methodSupport button{
+        width: 400px;
+        height: 10rem;
+        font-size: 4rem;
+        
+        
+    
+    }
     .form-label{
         margin: 1.5rem 0;
         font-size: 1.6rem;
