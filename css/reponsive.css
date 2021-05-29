@@ -318,6 +318,16 @@
         
     
     }
+    .closeMethorSupport{
+        top: 10px;
+        right: 10px;
+    }
+    .btn_close{
+        /* background-color: red; */
+        color: red;
+        font-size: 5rem;
+        padding: 4px;
+    }
     .form-label{
         margin: 1.5rem 0;
         font-size: 1.6rem;
