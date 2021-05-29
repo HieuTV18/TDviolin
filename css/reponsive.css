@@ -40,7 +40,7 @@
         width: 80%;
         height: 50%;
         top: 400px;
-        left: 20px;
+        /* left: 20px; */
         transform-origin: center;
 
 
@@ -290,7 +290,7 @@
         width: 80%;
         height: 50%;
         top: 500px;
-        left: 20px;
+        /* left: 20px; */
         transform-origin: center;
 
 
@@ -349,7 +349,7 @@
     .methodSupport{
         width: 80%;
         height: 65%;
-        top: 150px;
+        top: 120px;
 
 
     }
