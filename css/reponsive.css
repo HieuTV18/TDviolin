@@ -42,7 +42,6 @@
         top: 400px;
         left: 20px;
         transform-origin: center;
-        animation: none;
 
 
     }
@@ -293,7 +292,6 @@
         top: 500px;
         left: 20px;
         transform-origin: center;
-        animation: none;
 
 
     }
@@ -349,18 +347,14 @@
 
 @media only screen and (min-device-height:374px) and (max-device-height: 768px) and (min-device-width:340px) and (max-device-width: 739px){
     .methodSupport{
-        position: fixed;
         width: 80%;
-        height: 60%;
-        top: 100px;
-        left: 20px;
-        transform-origin: center;
-        animation: none;
+        height: 65%;
+        top: 150px;
 
 
     }
     .methodSupport button{
-        width: 300px;
+        width: 400px;
         height: 8rem;
     }
 
