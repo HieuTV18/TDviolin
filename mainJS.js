@@ -5,25 +5,17 @@ document.getElementById("introduce").onclick = function(){
     document.getElementById("list_product").style.display = "none";
     document.getElementById("support_help").style.display = "none";
 
-    document.getElementById("introduce").style.backgroundColor="#ff9100";
-    document.getElementById("teaching_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("show_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("product").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("help").style.backgroundColor="rgb(255, 242, 223)";
+
     
 }
 document.getElementById("teaching_schedule").onclick = function(){
     document.getElementById("slideshow").style.display = "none";
-    document.getElementById("tour_event").style.display = "flex";
+    document.getElementById("tour_event").style.display = "block";
     document.getElementById("teaching-time").style.display = "none";
     document.getElementById("list_product").style.display = "none";
     document.getElementById("support_help").style.display = "none";
 
-    document.getElementById("introduce").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("teaching_schedule").style.backgroundColor="#ff9100";
-    document.getElementById("show_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("product").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("help").style.backgroundColor="rgb(255, 242, 223)";
+
 }
 document.getElementById("show_schedule").onclick = function(){
     document.getElementById("slideshow").style.display = "none";
@@ -32,11 +24,7 @@ document.getElementById("show_schedule").onclick = function(){
     document.getElementById("list_product").style.display = "none";
     document.getElementById("support_help").style.display = "none";
 
-    document.getElementById("introduce").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("teaching_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("show_schedule").style.backgroundColor="#ff9100";
-    document.getElementById("product").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("help").style.backgroundColor="rgb(255, 242, 223)";
+
 }
 document.getElementById("product").onclick = function(){
     document.getElementById("slideshow").style.display = "none";
@@ -45,11 +33,7 @@ document.getElementById("product").onclick = function(){
     document.getElementById("list_product").style.display = "block";
     document.getElementById("support_help").style.display = "none";
 
-    document.getElementById("introduce").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("teaching_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("show_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("product").style.backgroundColor="#ff9100";
-    document.getElementById("help").style.backgroundColor="rgb(255, 242, 223)";
+
 }
 document.getElementById("help").onclick = function(){
     document.getElementById("slideshow").style.display = "none";
@@ -58,12 +42,40 @@ document.getElementById("help").onclick = function(){
     document.getElementById("list_product").style.display = "none";
     document.getElementById("support_help").style.display = "block";
 
-    document.getElementById("introduce").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("teaching_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("show_schedule").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("product").style.backgroundColor="rgb(255, 242, 223)";
-    document.getElementById("help").style.backgroundColor="#ff9100";
+
 }
+
+var header_menu = document.getElementById("navbar_menu");
+var menu_item = header_menu.getElementsByClassName("menu_item-link");
+for (var i = 0;i<menu_item.length; i++){
+    menu_item[i].addEventListener("click", function(){
+        var classCurrent = document.getElementsByClassName("menu_item-link--active")
+        classCurrent[0].className = classCurrent[0].className.replace(" menu_item-link--active", "");
+        this.className += " menu_item-link--active";
+        
+    });
+    // menu_item[i].addEventListener("click", function(){
+    //     var classCurrent = document.getElementsByClassName("menu_item-link--active");
+    //     var slideshow     =   document.getElementById("slideshow");
+    //     var tour_event    =   document.getElementById("tour_event");
+    //     var teaching      =   document.getElementById("teaching-time");
+    //     var list_product  =   document.getElementById("list_product");
+    //     var support_help  =   document.getElementById("support_help");
+    //     var ShowMenu_item = [slideshow,tour_event,teaching,list_product,support_help];
+    //     console.log("OK")
+    // });
+}
+
+
+// var slideshow     =   document.getElementById("slideshow");
+// var tour_event    =   document.getElementById("tour_event");
+// var teaching      =   document.getElementById("teaching-time");
+// var list_product  =   document.getElementById("list_product");
+// var support_help  =   document.getElementById("support_help");
+// var ShowMenu_item = [slideshow,tour_event,teaching,list_product,support_help];
+// console.log(ShowMenu_item[i].style.display = "block");
+
+
 
 // slide changeIMG 
 // var index = 1;
